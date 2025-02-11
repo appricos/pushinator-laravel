@@ -1,0 +1,41 @@
+{
+    "name": "laravel-notification-channels/pushinator",
+    "description": "Pushinator Laravel notification channel",
+    "homepage": "https://github.com/laravel-notification-channels/pushinator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Appricos",
+            "email": "support@appricos.com",
+            "homepage": "https://github.com/appricos/",
+            "role": "Co-Founder"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "appricos/pushinator-php": "^1.0",
+        "illuminate/notifications": "~10.0 || ~11.0",
+        "illuminate/support": "~10.0 || ~11.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\:channel_namespace\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\:channel_namespace\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:coverage": "phpunit --coverage-text --coverage-clover=coverage.clover"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
