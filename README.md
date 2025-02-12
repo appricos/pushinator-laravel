@@ -1,4 +1,3 @@
-
 # New Notification Channels
 
 ### Suggesting a new channel
